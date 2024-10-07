@@ -16,13 +16,13 @@ const IndexPage = ({ data }) => {
           <div className="md:col-span-3 p-2 sm:p-10">
             <div className="main-head">
               <h1 className="text-4xl font-bold uppercase font-bold">{data.site.siteMetadata.title}</h1>
-              <h3 className="text-[#1ab0b3]">{data.site.siteMetadata.description}</h3>
+              <div className="text-[#197b7d]">{data.site.siteMetadata.description}</div>
               <div className="text-[##4f5252] text-xs flex flex-wrap items-center justify-items-center gap-3 mt-2 mb-2">
-                <a href="tel:+37378582197" className="group flex items-center gap-1"><DevicePhoneMobileIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" />+373-78582197</a>
-                <a href="mailto:rodnitchi@gmail.com" className="group flex items-center gap-1"><AtSymbolIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" /> <span>rodnitchi@gmail.com</span></a>
-                <a href="/" className="group flex items-center gap-1"><LinkIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" />dinu.dev</a>
+                <a href="tel:+37378582197" className="group flex items-center gap-1"><DevicePhoneMobileIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" />+373-78582197</a>
+                <a href="mailto:rodnitchi@gmail.com" className="group flex items-center gap-1"><AtSymbolIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" /> <span>rodnitchi@gmail.com</span></a>
+                <a href="/" className="group flex items-center gap-1"><LinkIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" />dinu.dev</a>
                 <a target="_blank" rel="noreferrer" className="group flex items-center gap-1" href="https://en.wikipedia.org/wiki/Chi%C8%99in%C4%83u">
-                  <MapPinIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" /> <span>Chisinau, Moldova</span>
+                  <MapPinIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" /> <span>Chisinau, Moldova</span>
                 </a>
               </div>
             </div>
@@ -154,11 +154,11 @@ const IndexPage = ({ data }) => {
           <a href="https://www.drupal.org/u/dinu-r" className="hover:underline">drupal.org</a>
         </div>
         <div className="text-[##4f5252] text-xs flex flex-wrap items-center justify-center gap-3 mt-2 mb-2">
-          <a href="tel:+37378582197" className="group flex items-center gap-1"><DevicePhoneMobileIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" />+373-78582197</a>
-          <a href="mailto:rodnitchi@gmail.com" className="group flex items-center gap-1"><AtSymbolIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" /> <span>rodnitchi@gmail.com</span></a>
-          <a href="/" className="group flex items-center gap-1"><LinkIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" />dinu.dev</a>
+          <a href="tel:+37378582197" className="group flex items-center gap-1"><DevicePhoneMobileIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" />+373-78582197</a>
+          <a href="mailto:rodnitchi@gmail.com" className="group flex items-center gap-1"><AtSymbolIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" /> <span>rodnitchi@gmail.com</span></a>
+          <a href="/" className="group flex items-center gap-1"><LinkIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" />dinu.dev</a>
           <a target="_blank" rel="noreferrer" className="group flex items-center gap-1" href="https://en.wikipedia.org/wiki/Chi%C8%99in%C4%83u">
-            <MapPinIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" /> <span>Chisinau, Moldova</span>
+            <MapPinIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" /> <span>Chisinau, Moldova</span>
           </a>
         </div>
       </div>
@@ -169,6 +169,7 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const Head = ({ data }) => <>
+  <html lang="en" />
   <title>{data.site.siteMetadata.title} - {data.site.siteMetadata.description}</title>
   <meta name="description" content={data.site.siteMetadata.description} />
   <meta name="image" content={data.site.siteMetadata.image} />
