@@ -1,5 +1,5 @@
 import * as React from "react"
-import { DevicePhoneMobileIcon, AtSymbolIcon, LinkIcon, MapPinIcon, ArrowDownTrayIcon } from '@heroicons/react/24/solid'
+import { DevicePhoneMobileIcon, AtSymbolIcon, LinkIcon, MapPinIcon } from '@heroicons/react/24/solid'
 import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
 import Employment from "../components/employment"
