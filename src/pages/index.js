@@ -1,5 +1,5 @@
 import * as React from "react"
-import { DevicePhoneMobileIcon, AtSymbolIcon, LinkIcon, MapPinIcon } from '@heroicons/react/24/solid'
+import { DevicePhoneMobileIcon, AtSymbolIcon, LinkIcon, MapPinIcon, ArrowDownTrayIcon } from '@heroicons/react/24/solid'
 import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
 import Employment from "../components/employment"
@@ -9,15 +9,15 @@ import Language from "../components/language"
 
 const IndexPage = ({ data }) => {
   return (
-    <div>
-      <div className="container mx-auto px-10">
+    <>
+      <div className="md:container md:mx-auto">
         <div className="grid md:grid-cols-4">
           {/* Column 1 */}
-          <div className="md:col-span-3 p-10">
+          <div className="md:col-span-3 p-2 sm:p-10">
             <div className="main-head">
               <h1 className="text-4xl font-bold uppercase font-bold">{data.site.siteMetadata.title}</h1>
               <h3 className="text-[#1ab0b3]">{data.site.siteMetadata.description}</h3>
-              <div className="text-[##4f5252] text-xs flex items-center justify-items-center gap-3 mt-2 mb-2">
+              <div className="text-[##4f5252] text-xs flex flex-wrap items-center justify-items-center gap-3 mt-2 mb-2">
                 <a href="tel:+37378582197" className="group flex items-center gap-1"><DevicePhoneMobileIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" />+373-78582197</a>
                 <a href="mailto:rodnitchi@gmail.com" className="group flex items-center gap-1"><AtSymbolIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" /> <span>rodnitchi@gmail.com</span></a>
                 <a href="/" className="group flex items-center gap-1"><LinkIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" />dinu.dev</a>
@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
               <h2 className="uppercase text-2xl mb-4 mt-20 text-base text-[#384347]">Experience</h2>
               <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 {data.allEmploymentHistory.edges.map(employment => (
-                  <li className="mb-10 ms-4">
+                  <li className="mb-10 ms-4" key={employment.node.frontmatter.company}>
                     <Employment employment={employment} />
                   </li>
                 ))}
@@ -54,8 +54,8 @@ const IndexPage = ({ data }) => {
             </div>
             <div className="pl-10 pr-10">
               <ul className="flex items-center justify-center gap-2">
-                <li><a className="flex items-center justify-center gap-1 text-white hover:underline" href="https://www.linkedin.com/in/dinu-rodnitchi/"><StaticImage src="../images/social-linkedin.png" alt="Dinu Rodnitchi - LinkedIn" objectFit="cover" width="24" />LinkedIn</a></li>
-                <li><a className="flex items-center justify-center gap-1 text-white hover:underline" href="https://www.drupal.org/u/dinu-r"><StaticImage src="../images/social-drupal.png" alt="Dinu Rodnitchi - durpal.org" objectFit="cover" width="24" />drupal.org</a></li>
+                <li><a className="flex items-center justify-center gap-1 text-white hover:underline" href="https://www.linkedin.com/in/dinu-rodnitchi/"><StaticImage src="../images/social-linkedin.png" alt="Dinu Rodnitchi - LinkedIn" objectFit="cover" width={24} />LinkedIn</a></li>
+                <li><a className="flex items-center justify-center gap-1 text-white hover:underline" href="https://www.drupal.org/u/dinu-r"><StaticImage src="../images/social-drupal.png" alt="Dinu Rodnitchi - durpal.org" objectFit="cover" width={24} />drupal.org</a></li>
               </ul>
             </div>
             <div className="sticky top-0 p-10">
@@ -146,14 +146,14 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="bg-slate-200 text-black text-center p-5">
-        <div class="flex justify-center items-center gap-2">
-          <a href="https://github.com/dinu-dev/dinu-dev" className="hover:underline">Download this website</a>
+      <div className="bg-slate-200 text-black text-center p-5 w-dvw">
+        <div className="flex justify-center items-center gap-2 flex-wrap">
+          <a href="https://github.com/dinu-dev/dinu-dev" className="hover:underline"> Download this website</a>
           <a href="/dinu-cv.pdf" className="hover:underline">Download CV</a>
           <a href="https://www.linkedin.com/in/dinu-rodnitchi/" className="hover:underline">LinkedIn</a>
           <a href="https://www.drupal.org/u/dinu-r" className="hover:underline">drupal.org</a>
         </div>
-        <div className="text-[##4f5252] text-xs flex items-center justify-center gap-3 mt-2 mb-2">
+        <div className="text-[##4f5252] text-xs flex flex-wrap items-center justify-center gap-3 mt-2 mb-2">
           <a href="tel:+37378582197" className="group flex items-center gap-1"><DevicePhoneMobileIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" />+373-78582197</a>
           <a href="mailto:rodnitchi@gmail.com" className="group flex items-center gap-1"><AtSymbolIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" /> <span>rodnitchi@gmail.com</span></a>
           <a href="/" className="group flex items-center gap-1"><LinkIcon className="h-5 w-5 text-gray-400 group-hover:text-[#1ab0b3]" />dinu.dev</a>
@@ -162,7 +162,7 @@ const IndexPage = ({ data }) => {
           </a>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
