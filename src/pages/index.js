@@ -54,8 +54,8 @@ const IndexPage = ({ data }) => {
             </div>
             <div className="pl-10 pr-10">
               <ul className="flex items-center justify-center gap-2">
-                <li><a className="flex items-center justify-center gap-1 text-white hover:underline" href="https://www.linkedin.com/in/dinu-rodnitchi/"><StaticImage src="../images/social-linkedin.png" alt="Dinu Rodnitchi - LinkedIn" objectFit="cover" width="48" />LinkedIn</a></li>
-                <li><a className="flex items-center justify-center gap-1 text-white hover:underline" href="https://www.drupal.org/u/dinu-r"><StaticImage src="../images/social-drupal.png" alt="Dinu Rodnitchi - durpal.org" objectFit="cover" width="48" />drupal.org</a></li>
+                <li><a className="flex items-center justify-center gap-1 text-white hover:underline" href="https://www.linkedin.com/in/dinu-rodnitchi/"><StaticImage src="../images/social-linkedin.png" alt="Dinu Rodnitchi - LinkedIn" objectFit="cover" width="24" />LinkedIn</a></li>
+                <li><a className="flex items-center justify-center gap-1 text-white hover:underline" href="https://www.drupal.org/u/dinu-r"><StaticImage src="../images/social-drupal.png" alt="Dinu Rodnitchi - durpal.org" objectFit="cover" width="24" />drupal.org</a></li>
               </ul>
             </div>
             <div className="sticky top-0 p-10">

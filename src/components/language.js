@@ -8,7 +8,7 @@ export default function Language ({ name, level, rate }) {
       <div>
         {/* Display 5 dots and fill the rest with empty dots */}
         {[...Array(5)].map((_, i) => (
-          <div key={i} className={`w-2 h-2 bg-${i < rate ? 'white' : 'white bg-opacity-50'} rounded-full inline-block ml-1`}></div>
+          <div key={i} className={`w-2 h-2 ${i < rate ? '' : 'bg-opacity-50'} rounded-full inline-block ml-1 bg-white`}></div>
         ))}
       </div>
     </div>
