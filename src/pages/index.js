@@ -18,7 +18,6 @@ const IndexPage = ({ data }) => {
               <h1 className="text-4xl font-bold uppercase font-bold">{data.site.siteMetadata.title}</h1>
               <div className="text-[#197b7d]">{data.site.siteMetadata.description}</div>
               <div className="text-[##4f5252] text-xs flex flex-wrap items-center justify-items-center gap-3 mt-2 mb-2">
-                <a href="tel:+37378582197" className="group flex items-center gap-1"><DevicePhoneMobileIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" />+373-78582197</a>
                 <a href="mailto:rodnitchi@gmail.com" className="group flex items-center gap-1"><AtSymbolIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" /> <span>rodnitchi@gmail.com</span></a>
                 <a href="/" className="group flex items-center gap-1"><LinkIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" />dinu.dev</a>
                 <a target="_blank" rel="noreferrer" className="group flex items-center gap-1" href="https://en.wikipedia.org/wiki/Chi%C8%99in%C4%83u">
@@ -148,13 +147,10 @@ const IndexPage = ({ data }) => {
       </div>
       <div className="bg-slate-200 text-black text-center p-5 w-dvw">
         <div className="flex justify-center items-center gap-2 flex-wrap">
-          <a href="https://github.com/dinu-dev/dinu-dev" className="hover:underline"> Download this website</a>
-          <a href="/dinu-cv.pdf" className="hover:underline">Download CV</a>
           <a href="https://www.linkedin.com/in/dinu-rodnitchi/" className="hover:underline">LinkedIn</a>
           <a href="https://www.drupal.org/u/dinu-r" className="hover:underline">drupal.org</a>
         </div>
         <div className="text-[##4f5252] text-xs flex flex-wrap items-center justify-center gap-3 mt-2 mb-2">
-          <a href="tel:+37378582197" className="group flex items-center gap-1"><DevicePhoneMobileIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" />+373-78582197</a>
           <a href="mailto:rodnitchi@gmail.com" className="group flex items-center gap-1"><AtSymbolIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" /> <span>rodnitchi@gmail.com</span></a>
           <a href="/" className="group flex items-center gap-1"><LinkIcon className="h-5 w-5 text-gray-400 group-hover:text-[#197b7d]" />dinu.dev</a>
           <a target="_blank" rel="noreferrer" className="group flex items-center gap-1" href="https://en.wikipedia.org/wiki/Chi%C8%99in%C4%83u">
