@@ -1,5 +1,5 @@
 ---
-date: 2019 - Present
+date: 2019 - 2025
 title: Senior Drupal Developer
 company: Optasy
 type: employment
